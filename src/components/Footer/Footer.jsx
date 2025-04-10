@@ -1,5 +1,6 @@
 import s from "./Footer.module.scss";
 import flogo from "../../assets/svg/flogo.svg";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
@@ -12,13 +13,13 @@ export default function Footer() {
                     <nav className={s.nav}>
                         <ul className={s.ul}>
                             <li className={s.active}>
-                                <a href="/">О нас</a>
+                                <Link to="/">О нас</Link>
                             </li>
                             <li>
-                                <a href="/catalog">Каталог</a>
+                                <Link to="/catalog">Каталог</Link>
                             </li>
                             <li>
-                                <a href="/">Где нас найти</a>
+                                <Link to="/">Где нас найти</Link>
                             </li>
                         </ul>
                     </nav>

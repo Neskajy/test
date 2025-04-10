@@ -2,6 +2,7 @@ import s from "./Header.module.scss";
 import "../../index.scss";
 import { useState } from "react";
 import logo from "../../assets/svg/logo.svg";
+import { Link } from "react-router-dom";
 
 export default function Header() {
     const [isActive, setIsActive] = useState(false);
@@ -19,13 +20,13 @@ export default function Header() {
                     <nav className={s.nav}>
                         <ul className={s.ul}>
                             <li className={s.active}>
-                                <a href="/">О нас</a>
+                                <Link to="/">О нас</Link>
                             </li>
                             <li>
-                                <a href="/catalog">Каталог</a>
+                                <Link to="/catalog">Каталог</Link>
                             </li>
                             <li>
-                                <a href="/">Где нас найти</a>
+                                <Link to="/">Где нас найти</Link>
                             </li>
                         </ul>
                     </nav>
