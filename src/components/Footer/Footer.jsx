@@ -1,4 +1,5 @@
 import s from "./Footer.module.scss";
+import flogo from "../../assets/svg/flogo.svg";
 
 export default function Footer() {
     return (
@@ -6,7 +7,7 @@ export default function Footer() {
             <footer className={s.footer}>
                 <div className={s.container}>
                     <div className={s.logo}>
-                        <img src="/src/assets/svg/flogo.svg" alt="" />
+                        <img src={flogo} alt="" />
                     </div>
                     <nav className={s.nav}>
                         <ul className={s.ul}>

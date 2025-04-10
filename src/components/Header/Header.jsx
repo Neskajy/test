@@ -1,6 +1,7 @@
 import s from "./Header.module.scss";
 import "../../index.scss";
 import { useState } from "react";
+import logo from "../../assets/svg/logo.svg";
 
 export default function Header() {
     const [isActive, setIsActive] = useState(false);
@@ -38,7 +39,7 @@ export default function Header() {
                         </div>
                     </div>
                     <div className={s.logo}>
-                        <img src="src/assets/svg/logo.svg" alt="" />
+                        <img src={logo} alt="" />
                     </div>
                     <div className={s.buttons}>
                         <button className={s.btn1}>Регистрация</button>

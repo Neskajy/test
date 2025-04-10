@@ -1,6 +1,6 @@
 import MainPage from "./pages/MainPage";
 import CatalogPage from "./pages/CatalogPage.jsx";
-
+import "./index.scss";
 import { Routes, Route, Link} from "react-router-dom";
 
 

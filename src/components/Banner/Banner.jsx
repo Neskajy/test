@@ -1,11 +1,12 @@
 import s from "./Banner.module.scss";
+import banner from "../../assets/raster/banner.png";
 
 export default function Banner() {
     return (
         <>
             <section className={s.banner}>
                 <div className={s.background}>
-                    <img src="/src/assets/raster/banner.png" alt="" />
+                    <img src={banner} alt="" />
                 </div>
                 <div className={s.container}>
                     <button className={s.about}>
